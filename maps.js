@@ -17,7 +17,7 @@ campuses =  [
 
 campuses.array.forEach(function(collegeCampus) {
 
-    let markerText = `${collegeCampus.name}`
+    let markerText = `<b>${collegeCampus.name}</b><br><a href="${collegeCampus.website}">Website</a>`
     L.marker(collegeCampus.coordinates).bindPopup(markerText).addTo(map)
 });
 
